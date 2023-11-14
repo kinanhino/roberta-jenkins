@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    enviroment {
+    environment {
         ECR_URL = '933060838752.dkr.ecr.eu-central-1.amazonaws.com'
         IMAGE_NAME = 'roberta-jenkins'
     }
