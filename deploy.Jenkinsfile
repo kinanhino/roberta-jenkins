@@ -6,7 +6,7 @@ pipeline {
         stage('Deploy') {
                 steps {
 
-                sh '#kubectl apply -f ....''
+                sh '# kubectl apply -f ....''
                 }
             }
 
