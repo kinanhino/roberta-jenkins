@@ -8,6 +8,7 @@ pipeline {
 
                 sh '''
                 # kubectl apply -f aaa.yaml
+
                 '''
                 }
             }
