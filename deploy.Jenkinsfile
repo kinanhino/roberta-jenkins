@@ -1,7 +1,6 @@
 pipeline {
     agent any
-    parameters { string(name: '933060838752.dkr.ecr.eu-central-1.amazonaws.com/jenkins_agent', defaultValue:'',description: '')}
-    string(name: '933060838752.dkr.ecr.eu-central-1.amazonaws.com/jenkins_agent', value: '$ECR_URL/$IMAGE_NAME:$BUILD_NUMBER')
+    parameters { string(name: 'ROBERTA_IMAGE_URL', defaultValue:'',description: '')}
     stages {
         stage('Deploy') {
                 steps {
