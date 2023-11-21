@@ -6,7 +6,9 @@ pipeline {
         stage('Deploy') {
                 steps {
 
-                sh '# kubectl apply -f aaa.yaml''
+                sh '''
+                # kubectl apply -f aaa.yaml
+                '''
                 }
             }
 
