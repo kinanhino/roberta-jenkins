@@ -1,14 +1,14 @@
 pipeline {
     agent {
     docker {
-        image '<docker-img>'
+        image '933060838752.dkr.ecr.eu-central-1.amazonaws.com/jenkins_agent'
         args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
 }
 
     environment {
         ECR_URL = '933060838752.dkr.ecr.eu-central-1.amazonaws.com'
-        IMAGE_NAME = 'roberta-jenkins'
+        IMAGE_NAME = 'jenkins_agent'
     }
 
     stages {
