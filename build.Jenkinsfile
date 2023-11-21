@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+    docker {
+        image '<docker-img>'
+        args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
+    }
+}
 
     environment {
         ECR_URL = '933060838752.dkr.ecr.eu-central-1.amazonaws.com'
